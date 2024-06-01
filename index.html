@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body style="background-color: rgb(236, 234, 234);">
+    <div id="main"></div>
+
+
+    <script src="index.js"></script>
+    <script>
+        !localStorage.getItem("user-list") && localStorage.setItem("user-list", "[]");
+        loadData();
+        DashBoardComponent();
+    </script>
+
+</body>
+
+</html>
